@@ -1,0 +1,20 @@
+{
+  "name": "Reading Time Estimator",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Calculates the estimated reading time of articles.",
+  "permissions": ["activeTab", "tabs", "https://*/*"],
+  "icons":{
+      "16": "images/RT16x16.png",
+      "32": "images/RT32x32.png",
+      "48": "images/RT48x48.png",
+      "128": "images/RT128x128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+
+    }
+  ]
+}
